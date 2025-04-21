@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
+  }
+  
+  .heading {
+    @apply text-4xl sm:text-5xl font-bold bg-gradient-to-r from-primary-light to-primary-dark bg-clip-text text-transparent;
+  }
+
+  .subheading {
+    @apply text-lg text-gray-600 dark:text-gray-300 mt-4;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl;
+  }
+}
