@@ -54,7 +54,7 @@ export default function Hero() {
               { Icon: FaGithub, href: "https://github.com/sriraghavi22" },
               { Icon: FaLinkedin, href: "https://linkedin.com/in/ksriraghavi/" },
               { Icon: FaEnvelope, href: "mailto:raghavi5417@gmail.com" }
-            ].map(({ Icon, href }, index) => (
+            ].map(({ Icon, href }) => (
               <motion.a
                 key={href}
                 href={href}
