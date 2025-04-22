@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience'; // Added
 import Leadership from './components/Leadership';
 import Achievements from './components/Achievements';
+import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -54,6 +55,7 @@ function App() {
         <Experience /> {/* Added */}
         <Leadership />
         <Achievements />
+        <Certifications />
         <Contact />
         <Footer />
       </main>

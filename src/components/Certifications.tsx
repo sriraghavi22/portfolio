@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaTrophy, FaFileAlt, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaFileAlt } from 'react-icons/fa';
 
-export default function Achievements() {
+export default function Certifications() {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
   return (
-    <section id="achievements" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="certifications" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="section-container">
         <motion.div
           ref={ref}
@@ -17,7 +17,7 @@ export default function Achievements() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="heading text-center mb-16">Achievements & Awards</h2>
+          <h2 className="heading text-center mb-16">Certifications</h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             <motion.div
@@ -27,29 +27,29 @@ export default function Achievements() {
               className="card"
             >
               <h3 className="text-xl font-bold mb-4 flex items-center">
-                <FaTrophy className="text-yellow-500 mr-3" />
-                Competitions & Hackathons
+                <FaFileAlt className="text-blue-500 mr-3" />
+                2024 Certifications
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <div className="flex-shrink-0 w-2 h-2 bg-primary-dark dark:bg-primary-light rounded-full mt-2 mr-3"></div>
                   <div>
-                    <p className="font-medium">Tech Savishkar 3.0 (National Level) – 2nd Prize</p>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm">Farm2Fork Supply Chain Project (Blockchain & IPFS)</p>
+                    <p className="font-medium">Google - AIML Virtual Internship</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">2024</p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 w-2 h-2 bg-primary-dark dark:bg-primary-light rounded-full mt-2 mr-3"></div>
                   <div>
-                    <p className="font-medium">Code Breakers – 3rd Prize</p>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm">Multi-round coding competition (aptitude, debugging, coding)</p>
+                    <p className="font-medium">Oracle - Java Fundamentals</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">2024</p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 w-2 h-2 bg-primary-dark dark:bg-primary-light rounded-full mt-2 mr-3"></div>
                   <div>
-                    <p className="font-medium">Tech Tussle – 4th Rank</p>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm">Two-round competition (MCQs and coding challenges)</p>
+                    <p className="font-medium">Postman - API Fundamentals Student Expert</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">2024</p>
                   </div>
                 </li>
               </ul>
@@ -63,57 +63,33 @@ export default function Achievements() {
             >
               <h3 className="text-xl font-bold mb-4 flex items-center">
                 <FaFileAlt className="text-blue-500 mr-3" />
-                Achievements & Recognition
+                2023 Certifications
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <div className="flex-shrink-0 w-2 h-2 bg-primary-dark dark:bg-primary-light rounded-full mt-2 mr-3"></div>
                   <div>
-                    <p className="font-medium">GirlScript Summer of Code – Rank 122</p>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm">Among thousands of open-source contributors globally</p>
+                    <p className="font-medium">NPTEL - Python for Data Science (Top 2%)</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">2023</p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 w-2 h-2 bg-primary-dark dark:bg-primary-light rounded-full mt-2 mr-3"></div>
                   <div>
-                    <p className="font-medium">Certificate of Academic Excellence</p>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm">Highest academic performance</p>
+                    <p className="font-medium">NPTEL - Problem Solving Through C</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">2023</p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 w-2 h-2 bg-primary-dark dark:bg-primary-light rounded-full mt-2 mr-3"></div>
                   <div>
-                    <p className="font-medium">Branch Topper – 3 Consecutive Semesters</p>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm">College-wide 2nd rank (1st sem)</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <div className="flex-shrink-0 w-2 h-2 bg-primary-dark dark:bg-primary-light rounded-full mt-2 mr-3"></div>
-                  <div>
-                    <p className="font-medium">Selected for NxtWave NSDC Fellowship</p>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm">Prestigious fellowship recognition</p>
+                    <p className="font-medium">IBM SkillsBuild - Artificial Intelligence</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">2023</p>
                   </div>
                 </li>
               </ul>
             </motion.div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="text-center"
-          >
-            <a
-              href="https://drive.google.com/file/d/1YewpAv8NQRlClUCxbKWVA-bL5HbE1Zf9/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-primary-dark text-white dark:bg-primary-light dark:text-gray-900 rounded-full hover:shadow-lg transition-shadow"
-            >
-              View Full Resume
-              <FaExternalLinkAlt className="ml-2 w-4 h-4" />
-            </a>
-          </motion.div>
         </motion.div>
       </div>
     </section>
