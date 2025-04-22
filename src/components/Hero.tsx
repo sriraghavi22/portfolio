@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaCode } from 'react-icons/fa';
 
 export default function Hero() {
   return (
@@ -53,7 +53,8 @@ export default function Hero() {
             {[
               { Icon: FaGithub, href: "https://github.com/sriraghavi22" },
               { Icon: FaLinkedin, href: "https://linkedin.com/in/ksriraghavi/" },
-              { Icon: FaEnvelope, href: "mailto:raghavi5417@gmail.com" }
+              { Icon: FaEnvelope, href: "mailto:raghavi5417@gmail.com" },
+              { Icon: FaCode, href: "https://leetcode.com/u/raghavi5417/" }, // Added LeetCode
             ].map(({ Icon, href }) => (
               <motion.a
                 key={href}

@@ -4,12 +4,28 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
   {
+    title: 'Holoquest Escape Room',
+    description: 'A web-based 3D escape room game with AI-driven dynamic puzzles using Deep Q-Networks. Features gesture/voice controls and immersive environments, boosting player engagement by 25%.',
+    image: '/assets/holoquest.png',
+    tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Three.js', 'A-Frame', 'HandTrack.js', 'Web Speech API', 'AI'],
+    github: 'https://github.com/sriraghavi22/holoquest',
+    live: 'https://holoquest.vercel.app/',
+  },
+  {
+    title: 'Career Catalyst Platform',
+    description: 'A web platform for resume analysis, job search, institutional hiring, and organizational GitHub stats with salary suggestions.',
+    image: '/assets/careercatalyst.png',
+    tags: ['React', 'Node.js', 'Express', 'Flask', 'JWT', 'Gemini API'],
+    github: 'https://github.com/sriraghavi22/careerCatalyst',
+    live: 'https://career-catalyst-six.vercel.app/',
+  },
+  {
     title: 'Study Planner Web Application',
     description: 'A full-stack collaborative study planning platform with real-time group chat, JWT authentication, and personalized study insights. Reduced missed deadlines by 20% through smart notifications.',
     image: '/assets/studyimage.jpg',
     tags: ['React', 'Node.js', 'MongoDB', 'Socket.io', 'JWT'],
-    github: 'https://github.com/sriraghavi22',
-    live: '#',
+    github: 'https://github.com/sriraghavi22/study-planner',
+    // live: '#',
   },
   {
     title: 'Farm2Fork Supply Chain',
@@ -17,7 +33,7 @@ const projects = [
     image: '/assets/farm2fork.jpg',
     tags: ['React', 'Node.js', 'MongoDB', 'IPFS', 'Blockchain'],
     github: 'https://github.com/sriraghavi22',
-    live: '#',
+    // live: '#',
   },
   {
     title: 'Genome Analysis',
@@ -25,7 +41,7 @@ const projects = [
     image: '/assets/geneAnalysis.jpg',
     tags: ['Python', 'BioPython', 'Bioinformatics', 'Data Analysis'],
     github: 'https://github.com/sriraghavi22',
-    live: '#',
+    // live: '#',
   },
 ];
 
@@ -46,7 +62,7 @@ export default function Projects() {
         >
           <h2 className="heading text-center mb-16">Featured Projects</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={project.title}

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaUsers, FaLightbulb, FaChartLine } from 'react-icons/fa';
+import { FaUsers, FaLightbulb, FaChartLine, FaTrophy } from 'react-icons/fa';
 
 const leadershipRoles = [
   {
@@ -20,6 +20,12 @@ const leadershipRoles = [
     icon: FaChartLine,
     description: "Consistently ranked as branch topper for 3 consecutive semesters.",
     impact: "Achieved college-wide 2nd rank in the first semester, demonstrating academic excellence."
+  },
+  {
+    title: "Event Co-ordinator - Techmaze 2K25",
+    icon: FaTrophy,
+    description: "Organized Techmaze, a tech competition at B V Raju Institute, featuring puzzle-solving, input guessing, and Figma designing for different college students.",
+    impact: "40+ teams have participated and our event was a big hit."
   }
 ];
 
@@ -40,7 +46,7 @@ export default function Leadership() {
         >
           <h2 className="heading text-center mb-16">Leadership & Impact</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {leadershipRoles.map((role, index) => (
               <motion.div
                 key={role.title}

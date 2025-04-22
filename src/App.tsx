@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Experience from './components/Experience'; // Added
 import Leadership from './components/Leadership';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
@@ -50,6 +51,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Experience /> {/* Added */}
         <Leadership />
         <Achievements />
         <Contact />
@@ -59,4 +61,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
