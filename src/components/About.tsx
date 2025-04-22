@@ -25,7 +25,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <img
-                src="src\assets\mypho.jpg"
+                src="/assets/mypho.jpg"
                 alt="About me"
                 className="rounded-lg shadow-xl"
               />

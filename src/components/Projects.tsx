@@ -6,7 +6,7 @@ const projects = [
   {
     title: 'Study Planner Web Application',
     description: 'A full-stack collaborative study planning platform with real-time group chat, JWT authentication, and personalized study insights. Reduced missed deadlines by 20% through smart notifications.',
-    image: 'src/assets/studyimage.jpg',
+    image: '/assets/studyimage.jpg',
     tags: ['React', 'Node.js', 'MongoDB', 'Socket.io', 'JWT'],
     github: 'https://github.com/sriraghavi22',
     live: '#',
@@ -14,7 +14,7 @@ const projects = [
   {
     title: 'Farm2Fork Supply Chain',
     description: 'A blockchain-based food supply chain system using IPFS for transparent tracking. Features sustainability scoring, farmer dashboards, and QR code-based traceability.',
-    image: 'src/assets/farm2fork.jpg',
+    image: '/assets/farm2fork.jpg',
     tags: ['React', 'Node.js', 'MongoDB', 'IPFS', 'Blockchain'],
     github: 'https://github.com/sriraghavi22',
     live: '#',
@@ -22,7 +22,7 @@ const projects = [
   {
     title: 'Genome Analysis',
     description: 'Identified 27 defense response genes in neem with potential for enhancing rice disease resistance. Analyzed 19,446 genes using computational biology tools.',
-    image: 'src/assets/geneAnalysis.jpg',
+    image: '/assets/geneAnalysis.jpg',
     tags: ['Python', 'BioPython', 'Bioinformatics', 'Data Analysis'],
     github: 'https://github.com/sriraghavi22',
     live: '#',
