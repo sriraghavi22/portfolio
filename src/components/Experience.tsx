@@ -23,7 +23,7 @@ const experiences: Experience[] = [
   {
     company: 'Blue Cloud Softech Solutions',
     role: 'Software Development Engineer Intern',
-    duration: 'Feb 2025 – Mar 2025',
+    duration: 'Feb 2025 – Present',
     location: 'Hyderabad, India',
     logo: '/assets/bluecloud.png',
     projects: [
