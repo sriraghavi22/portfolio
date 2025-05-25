@@ -32,7 +32,7 @@ const projects = [
     description: 'A blockchain-based food supply chain system using IPFS for transparent tracking. Features sustainability scoring, farmer dashboards, and QR code-based traceability.',
     image: '/assets/farm2fork.jpg',
     tags: ['React', 'Node.js', 'MongoDB', 'IPFS', 'Blockchain'],
-    github: 'https://github.com/sriraghavi22',
+    github: 'https://github.com/sriraghavi22/farm2fork',
     // live: '#',
   },
   {

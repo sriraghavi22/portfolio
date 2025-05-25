@@ -7,9 +7,10 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
-import Leadership from './components/Leadership';
+import Education from './components/Education';
 import Achievements from './components/Achievements';
 import Certifications from './components/Certifications';
+import Leadership from './components/Leadership';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -30,9 +31,10 @@ function App() {
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
     { id: 'experience', label: 'Experience' },
-    { id: 'leadership', label: 'Leadership' },
+    { id: 'education', label: 'Education' },
     { id: 'achievements', label: 'Achievements' },
     { id: 'certifications', label: 'Certifications' },
+    { id: 'leadership', label: 'Leadership' },
     { id: 'contact', label: 'Contact' },
   ];
 
@@ -52,6 +54,8 @@ function App() {
                 {label}
               </a>
             ))}
+            {/* Resume Download Link */}
+            <a href="/assets/kathula_sri_raghavi_resumee.pdf" download="kathula_sri_raghavi_resume.pdf">Resume</a>
           </nav>
 
           {/* Theme Toggle Button */}
@@ -79,16 +83,16 @@ function App() {
         </div>
       </header>
 
-      {/* Offset to avoid hidden content under fixed navbar */}
       <div className="pt-24">
         <section id="hero"><Hero /></section>
         <section id="about"><About /></section>
         <section id="skills"><Skills /></section>
         <section id="projects"><Projects /></section>
         <section id="experience"><Experience /></section>
-        <section id="leadership"><Leadership /></section>
+        <section id="education"><Education /></section>
         <section id="achievements"><Achievements /></section>
         <section id="certifications"><Certifications /></section>
+        <section id="leadership"><Leadership /></section>
         <section id="contact"><Contact /></section>
         <Footer />
       </div>

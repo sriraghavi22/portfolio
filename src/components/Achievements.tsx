@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaTrophy, FaFileAlt, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaTrophy, FaFileAlt } from 'react-icons/fa';
 
 export default function Achievements() {
   const [ref, inView] = useInView({
@@ -104,15 +104,7 @@ export default function Achievements() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-center"
           >
-            <a
-              href="https://drive.google.com/file/d/1YewpAv8NQRlClUCxbKWVA-bL5HbE1Zf9/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-primary-dark text-white dark:bg-primary-light dark:text-gray-900 rounded-full hover:shadow-lg transition-shadow"
-            >
-              View Full Resume
-              <FaExternalLinkAlt className="ml-2 w-4 h-4" />
-            </a>
+
           </motion.div>
         </motion.div>
       </div>
