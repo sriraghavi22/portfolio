@@ -4,6 +4,7 @@ import { SunIcon, MoonIcon } from '@heroicons/react/24/solid';
 
 import Hero from './components/Hero';
 import About from './components/About';
+import VideoResume from './components/VideoResume';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
@@ -28,6 +29,7 @@ function App() {
   const sections = [
     { id: 'hero', label: 'Home' },
     { id: 'about', label: 'About' },
+    { id: 'video-resume', label: 'Video Resume' },
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
     { id: 'experience', label: 'Experience' },
@@ -86,6 +88,7 @@ function App() {
       <div className="pt-24">
         <section id="hero"><Hero /></section>
         <section id="about"><About /></section>
+        <section id="video-resume"><VideoResume /></section>
         <section id="skills"><Skills /></section>
         <section id="projects"><Projects /></section>
         <section id="experience"><Experience /></section>
